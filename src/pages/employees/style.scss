@@ -1,0 +1,57 @@
+.employee_single_wrapper{
+    display: flex;
+    flex-direction: column;
+
+    .title_name{
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        margin: 20px 0;
+
+        @media (max-width: 750px) {
+            font-size: 17px;
+        }
+    }
+
+    .employee_personal_info{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+
+
+        img{
+            width: 200px;
+            object-fit: contain;
+            margin: auto;
+            margin-left: 50px;
+            margin-right: 100px;
+
+            @media (max-width: 992px) {
+                margin-left: 20px;
+                margin-right: 50px;
+            }
+            @media (max-width: 750px) {
+                width: 120px;
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+
+        .infomation{
+            font-size: 16px;
+            flex-basis: 70%;
+            padding: 20px 0;
+            p{
+                span{
+                    font-weight: 700;
+                    margin-right: 10px;
+                }
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 750px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

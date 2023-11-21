@@ -1,0 +1,37 @@
+.job_single_wrapper{
+    margin-top: 40px;
+
+    .main_info{
+        margin-left: 40px;
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            
+            span{
+                font-weight: 700;
+                margin-right: 10px;
+            }
+        }
+
+        ul{
+            list-style-type: none;
+            margin-left: 20px;
+            margin-top: 10px;
+
+            li{
+                margin-bottom: 5px;
+
+                span{
+                    font-weight: 500;
+                    color: rgb(88, 88, 247);
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        @media (max-width: 750px) {
+            margin-left: 0;
+        }
+    }
+}

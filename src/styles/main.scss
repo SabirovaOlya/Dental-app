@@ -1,0 +1,110 @@
+.margin_top_15{
+    margin-top: 15px;
+}
+.margin_top_20{
+    margin-top: 15px;
+}
+.margin_top_10{
+    margin-top: 15px;
+}
+.margin_top_5{
+    margin-top: 15px;
+}
+.margin_top_35{
+    margin-top: 35px;
+}
+.margin_top_50{
+    margin-top: 50px;
+}
+
+.table_container{
+    margin-top: 30px;
+    max-height: 65vh;
+    overflow-y: auto;
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    thead{
+        background-color: rgb(228, 228, 255);
+        .head_title{
+            padding: 15px;
+            font-weight: 600;
+        }
+    }
+    
+    td, th {
+        border: 1px solid #0c0c0c;
+        text-align: left;
+        font-weight: 500;
+    }
+    td{
+        padding: 5px 15px ;
+    }
+    
+    tr:nth-child(even) {
+        background-color: rgb(228, 228, 255);
+    }
+}
+/* Hide the vertical scrollbar */
+.table_container::-webkit-scrollbar {
+    display: none;
+}
+
+.formik{
+    margin-top: 30px;
+    h2{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &_inputs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 20px;
+
+        .post_input{
+            display: flex;
+            flex-direction: column;
+            font-weight: 500;
+        }
+        .option_select {
+            display: flex;
+            flex-direction: column;
+          
+            p{
+                font-size: 14px;
+                line-height: 1.4;
+                margin-bottom: 7px;
+                font-weight: 600;
+            }
+            
+            select {
+                height: 50px;
+                width: 100%;
+                border: 3px solid rgb(199, 198, 198);
+                border-radius: 15px;
+                padding: 8px 10px;
+            }
+        }
+    
+        input{
+            padding: 10px;
+            border: 2px solid rgb(145, 145, 145);
+            border-radius: 10px;
+            margin-top: 5px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        input:focus {
+            border: 2px solid rgb(88, 88, 247);
+            outline: none;
+            background-color: rgba(227, 227, 248, 0.842);
+        }
+        
+        @media (max-width: 750px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

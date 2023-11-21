@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400;500;600;700;800;900&subset=latin,cyrillic');
+@import url('./styles/main.scss');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(244, 244, 244);
+}
+
+.app,
+.content{
+    height: 100%;
+    width: 100%;
+    font-family: 'Comfortaa', cursive;
+}
+
+.app{
+    display: flex;
+    position: relative;
+    font-family: 'Comfortaa', cursive;
+    overflow: hidden;
+    height: 100vh;
+}
+.content{
+    overflow-y: auto;
+}
+.container{
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    min-height: calc(100vh - 100px);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 5px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e0e0e0 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888 !important;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555 !important;
+}
